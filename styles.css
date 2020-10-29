@@ -1,5 +1,25 @@
-img{
-    border: 3px solid black;
-    margin: 20px;
-    display: flex;
+body{
+    background-color: rgb(0, 0, 0);
+    /* align-items: center; */
+    
 }
+img{
+    background-color: white;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+
+    max-height: 100px;
+    max-width: 100px;
+    /* width: 270px; */
+    border: 7px solid rgb(255, 63, 0);
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 8px 5px rgb(255, 127, 17) ;
+    margin: 30px;
+    padding: 5px;
+}
+
+img:hover{
+    box-shadow: 2px 8px 10px 4px rgb(190, 183, 164);
+}
+    
