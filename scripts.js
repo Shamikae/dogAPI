@@ -9,9 +9,11 @@ let url = 'https://dog.ceo/api/breeds/image/random/50'
 
 //Can also be written without {} more common without
 
-//fetch() allows you to make network requests 
+//fetch() allows you to make network requests from a database and it returns a promise
 fetch(url)
+//then is a synchronous code retrieves in order convetrs to json 
 .then(res =>  res.json())
+//response look like object or an array
 .then(res=> {
     console.log(res.message)
 for (let i = 0; i < res.message.length; i++){
@@ -26,4 +28,5 @@ for (let i = 0; i < res.message.length; i++){
     body.appendChild(picture);
 }
 })
+//catch is to catch any issues from the server or the database
 .catch(err => console.log(err))
